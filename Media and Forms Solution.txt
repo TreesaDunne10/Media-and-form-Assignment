@@ -1,0 +1,124 @@
+Media and Form
+
+Question 1. Create an image gallery that holds multiple images.
+
+Answer 1.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://dummyimage.com/400x500" alt="Dummy image">
+    <img src="https://dummyimage.com/500x300" alt="Dummy image">
+    <img src="https://dummyimage.com/400x600" alt="Dummy image">
+    <img src="https://dummyimage.com/600x400" alt="Dummy image">
+    <img src="https://dummyimage.com/700x500" alt="Dummy image">
+    <img src="https://dummyimage.com/900x900" alt="Dummy image">
+    <img src="https://dummyimage.com/800x600" alt="Dummy image">
+</body>    
+</html>
+
+
+Question 2. Use video and audio tags to display video and audio with the playback, and audio controls
+
+Answer 2.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio src="sample-6s.mp3" controls>Sample Audio</audio><br>
+    <video src="pexels_videos_1093662 (1080p).mp4" controls>Nature video</video>
+</body>
+</html>
+
+
+
+Question 3. Modify the previous assignment so that the audio and video play automatically as the page is loaded and they should play infinitely.
+
+Answer 3.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio src="sample-6s.mp3" controls muted autoplay loop>Sample Audio</audio><br>
+    <video src="pexels_videos_1093662 (1080p).mp4" controls muted autoplay loop>Nature video</video>
+</body>
+</html>
+
+
+Question 4. Use iframe to embed the physicswallah wikipedia page properly. 
+
+Answer 4.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe src="https://en.wikipedia.org/wiki/Physics_Wallah" frameborder="1" style="border: 0px; #ffffff none;" name="myiFrame" scrolling="yes" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+</body>
+</html>
+
+
+Question 5. Create a sign-up and sign-in form with proper validation.
+a. Sign-up form should have a first name, last name, email, password, confirm password, age, gender, and agree to terms and conditions field at minimum.
+b. Sign-in form should have email and password fields.
+
+Answer 5.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" placeholder="Aanya" id="firstname" required minlength="3" maxlength="20"><br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" placeholder="Anthill" id="lastname" required minlength="3" maxlength="20"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="aanyaanth01@gmail.com" id="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="************" id="password" required min="8"><br>
+
+        <label for="confirmpassword">Confirm Password:</label>
+        <input type="password" name="confirmpassword" placeholder="************" id="confirmpassword" required min="8"><br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" placeholder="23" id="age" required min=0 max=150><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" value="male" name="gender" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" value="female" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="other" value="other" name="gender">
+        <label for="other">Other</label><br>
+
+        <label for="terms">Terms:
+            <input type="checkbox" id="terms" required> I agree to terms and conditions
+        </label><br>
+        <button type="submit">Register</button>
+        
+    </form>
+</body>
+</html>
+ 
